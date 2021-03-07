@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'autoTestProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'learnTest',
-        'USER': 'mr_liu',
-        'PASSWORD': '111111',
-        'HOST': '154.8.143.237',
-        'PORT': '3306',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
