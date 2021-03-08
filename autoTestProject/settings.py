@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from utils import dbPath
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'testfulApiTest'
+    'autoTestProject.apps.projectApi'
 ]
 
 MIDDLEWARE = [
@@ -78,12 +79,12 @@ WSGI_APPLICATION = 'autoTestProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'learnTest',
-        'USER': 'mr_liu',
-        'PASSWORD': '111111',
-        'HOST': '154.8.143.237',
-        'PORT': '3306',
+        'ENGINE': dbPath.ENGINE,
+        'NAME': dbPath.NAME,
+        'USER': dbPath.USER,
+        'PASSWORD': dbPath.PASSWORD,
+        'HOST': dbPath.HOST,
+        'PORT': dbPath.PORT,
     }
 }
 

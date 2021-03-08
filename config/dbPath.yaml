@@ -1,0 +1,3 @@
+path:
+  localPath: 'D:\data\db.yaml'
+  hostPath: '/config/db.yaml'
